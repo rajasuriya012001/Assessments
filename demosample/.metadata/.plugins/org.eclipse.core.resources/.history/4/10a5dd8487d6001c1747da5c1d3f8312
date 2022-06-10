@@ -1,0 +1,16 @@
+package com.training.IOStream;
+
+public class Nummee {
+	//enum Day{SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY}
+	public static void main(String[]args)
+	{
+		for (Nume d:Nume.values())
+		{
+			System.out.println(d);
+		}
+		System.out.println("value of "+Nume.valueOf("SUNDAY"));
+		System.out.println("value of "+Nume.valueOf("WEDNESDAY").ordinal());
+
+		
+			}
+}

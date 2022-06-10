@@ -1,0 +1,50 @@
+package com.training.IOStream;
+
+import java.util.*;
+
+public class ArrList {
+	public static void main(String[]args)
+	{
+		/*ArrayList a=new ArrayList();
+		a.add(1234);
+		a.add("hi");
+		a.add("hello");
+		for(Object c:a)
+		{
+			System.out.println(c);
+		}
+		ArrayList<String> b=new ArrayList<String>();
+		b.add("mic");
+		b.add("testing");
+		b.add("hello");
+		for(String d:b)
+		{
+			System.out.println(d);
+		}
+		
+	}*/
+		
+		
+			ArrayList a=new ArrayList();
+			a.add(1234);
+			a.add("hi");
+			a.add("hello");
+			Iterator i = a.iterator();
+			while(i.hasNext())
+			{
+				System.out.println(i.next());
+			}
+			
+			ArrayList<String> b=new ArrayList<String>();
+			b.add("mic");
+			b.add("testing");
+			b.add("hello");
+			Iterator i1 = b.iterator();
+			while(i1.hasNext())
+			{
+				System.out.println(i1.next());
+			}
+			
+		}
+
+}

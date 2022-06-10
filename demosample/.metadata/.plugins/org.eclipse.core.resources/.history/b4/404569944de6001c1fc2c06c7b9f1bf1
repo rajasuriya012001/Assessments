@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class CoinFilped2 {
+	public static void main(String args[])
+	{
+        int hcount = 0;
+        int tcount = 0;
+        Scanner src = new Scanner(System.in);
+        System.out.println();();
+        int number = sc.nextInt();
+        for (int i = 1; i <= number; i++) 
+        {
+            coin();
+            if (getsideup().equals("heads")) 
+            {
+                hcount++;
+            } 
+            else 
+            {
+                tcount++;
+            }
+        }
+        System.out.println("total heads = " + hcount + " total tails = " + tcount);
+    }
+
+}

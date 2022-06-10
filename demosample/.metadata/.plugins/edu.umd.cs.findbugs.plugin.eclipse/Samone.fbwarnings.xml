@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="2" timestamp="1654755472966" analysisTimestamp="1654755472899" release="">
+  <Project projectName="Samone">
+    <Jar>/home/vastpro/demosample/Samone/bin/com/training/second/Inherit.class</Jar>
+    <AuxClasspathEntry>/home/vastpro/demosample/Samone/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/vastpro/Desktop/postgresql-42.3.5.jar</AuxClasspathEntry>
+    <SrcDir>/home/vastpro/demosample/Samone/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="com.training.Exception.BankMainAcc">
+      <SourceLine classname="com.training.Exception.BankMainAcc" sourcefile="BankMainAcc.java" sourcepath="com/training/Exception/BankMainAcc.java"/>
+    </Class>
+    <Method classname="com.training.Exception.BankMainAcc" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="com.training.Exception.BankMainAcc" start="9" end="26" startBytecode="0" endBytecode="227" sourcefile="BankMainAcc.java" sourcepath="com/training/Exception/BankMainAcc.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="com.training.Exception.BankMainAcc" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="BankMainAcc.java" sourcepath="com/training/Exception/BankMainAcc.java"/>
+    <SourceLine classname="com.training.Exception.BankMainAcc" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="BankMainAcc.java" sourcepath="com/training/Exception/BankMainAcc.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 9 Jun 2022 10:14:36 +0530" total_classes="1" referenced_classes="2" total_bugs="1" total_size="18" num_packages="2" java_version="16.0.1" vm_version="16.0.1+9-24" cpu_seconds="0.21" clock_seconds="0.07" peak_mbytes="568.77" alloc_mbytes="2048.00" gc_seconds="0.00" priority_1="1">
+    <PackageStats package="com.training.second" total_bugs="0" total_types="1" total_size="18">
+      <ClassStats class="com.training.second.Inherit" sourceFile="Inherit.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="31" invocations="2" avgMicrosecondsPerInvocation="15838" maxMicrosecondsPerInvocation="25672" standardDeviationMircosecondsPerInvocation="9833"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1654755449227" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1654755449228" release="" codeSize="15" numClasses="1"/>
+  </History>
+</BugCollection>

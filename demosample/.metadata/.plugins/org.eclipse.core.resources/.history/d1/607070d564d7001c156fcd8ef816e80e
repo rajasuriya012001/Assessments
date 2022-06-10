@@ -1,0 +1,22 @@
+package com.training.LamProgram;
+import java.util.*;
+
+
+public class DemoDates {
+	public static void main(String[]args)
+	{
+		Date d1 = new Date();
+		System.out.println(d1);
+		Date d2 = new Date(2000,3,23,4,33,10);
+		System.out.println(d2);
+		System.out.println(d2.after(d1));
+		System.out.println(d2.before(d1));
+		System.out.println(d1.getDate());
+		System.out.println("day is " +d1.getDay());
+		System.out.println(d1.getMonth());
+		
+		
+		
+	}
+
+}

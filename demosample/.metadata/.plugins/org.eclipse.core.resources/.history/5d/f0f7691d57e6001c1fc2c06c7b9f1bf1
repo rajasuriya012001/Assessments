@@ -1,0 +1,26 @@
+ 
+public class Circle {
+	double radius;
+	String color;
+	static final double PI=3.14;
+	static int count=0;
+	public Circle() {
+		radius=10;
+		color="pink";
+		count++;
+	}
+	public double getRadius() {
+		return radius;
+	}
+	public String getcolor() {
+		return color;
+	}
+	double findArea() {
+		return PI*radius*radius;
+	}
+	public void print() {
+		// TODO Auto-generated method stub
+		System.out.println("radius "+radius+"\ncolor "+color+"\narea "+findArea());
+	}
+
+}

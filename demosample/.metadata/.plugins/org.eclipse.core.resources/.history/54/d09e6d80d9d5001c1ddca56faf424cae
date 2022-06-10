@@ -1,0 +1,54 @@
+package com.training.IOStream;
+
+public class Generic {
+	class Test<T>
+	{
+		int id;
+		String name;
+		T obj;
+		Test(T obj)
+		{
+			this.obj=obj;
+		}
+		public T getObject()
+		{
+			return this.obj;
+		}
+		
+	}
+	/*
+public static < E > void printArray(E[]arr)
+{
+	for(E element :arr)
+	{
+		System.out.println(element);
+	}
+}
+
+
+public static void main(String[]args)
+{
+	Integer[] intarr1 ={10, 20, 30, 40, 50};
+	Double[] doublearr2= { 1.1, 2.2, 3.3, 4.4, 5.4};
+	Character[] chararr3= {'h','e','l','l','o'};
+	System.out.println("int array  :");
+	printArray(intarr1);
+	System.out.println("\nDouble array  :");
+	printArray(doublearr2);
+	System.out.println("\ncharacter array  :");
+	printArray(chararr3);
+	System.out.println("enjoy the life");
+	*/
+	Test<String> tobj1 = new Test("chandru");
+	System.out.println(tobj1.getObject());
+	Test<Integer> tobj2 = new Test(1234);
+	System.out.println(tobj2.getObject());
+	
+	
+	
+	}
+
+
+
+
+}

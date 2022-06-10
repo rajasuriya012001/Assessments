@@ -1,0 +1,23 @@
+
+public class Rectangle extends Shape {
+
+	private double width,height;
+	
+	public Rectangle(String name, double w, double h) {
+		super(name);
+		width=w;
+		height=h;
+		
+	}
+	public double getArea() {
+		return width*height;
+	}
+	
+	public double getWidht() {
+		return width;
+	}
+	
+	public double getHeight() {
+		return height;
+	}
+}

@@ -1,0 +1,13 @@
+
+public class Square extends Rectangle{
+
+	public Square(int b, int h) {
+		super(b, h);
+		// TODO Auto-generated constructor stub
+	}
+public static void main(String[] args) {
+	Square s=new Square(3,8);
+	s.Calculate();
+	s.display();
+}
+}

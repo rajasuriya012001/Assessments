@@ -1,0 +1,13 @@
+package com.training.IOStream;
+import java .util.*;
+
+public class SetProgram {
+	HashSet<String> h1 = new HashSet<String>();
+	h1.add("arun");
+	h1.add("arun");
+	h1.add("arun");
+	h1.add("arun");
+	h1.add("arun");
+	h1.add("arun");
+
+}

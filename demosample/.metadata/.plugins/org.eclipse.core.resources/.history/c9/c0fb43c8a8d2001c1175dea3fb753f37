@@ -1,0 +1,96 @@
+package com.training;
+
+import java.util.Scanner;
+
+public class Accept {
+	public static void main(String[] args) {
+		int sum = 0,even;
+
+		Scanner w = new Scanner(System.in);
+		int arr1[] = new int[10];
+
+		System.out.println("enter the value");
+		for (int i = 0; i < arr1.length; i++) {
+			arr1[i] = w.nextInt();
+
+		}
+		for (int j = 0; j < arr1.length; j++) {
+
+			sum = sum + arr1[j];
+			
+       
+        
+		}
+
+		int avg = sum / arr1.length;
+
+		
+		System.out.println("sum of array value is " + sum);
+		System.out.println("average array  value is " + avg);
+
+		for (int j = 0; j < arr1.length; j++) {
+			if (avg > arr1[j]) {
+				System.out.println("below of array value is " + arr1[j]);
+			}
+		}
+		for (int j = 0; j < arr1.length; j++) {
+			if (avg < arr1[j]) {
+				System.out.println("Above of array value is " + arr1[j]);
+			}
+
+		}
+		int max = arr1[0];
+		for (int j = 0; j < arr1.length; j++) {
+
+			if (max < arr1[j]) {
+				max = arr1[j];
+
+			}
+
+		}
+		System.out.println("maximum  of array value is " + max);
+
+		int max1 = arr1[0];
+		for (int j = 0; j < arr1.length; j++) {
+
+			if (max1 > arr1[j]) {
+				max1 = arr1[j];
+
+			}
+
+		}
+		System.out.println("maximum  of array value is " + max1);
+		for (int j = 0; j < arr1.length; j++) 
+		{	
+			 if(arr1[j]%2==0)
+		        {
+		        	System.out.println("even number is "+arr1[j]);
+		        }
+		}
+
+		for (int j = 0; j < arr1.length; j++) 
+		{	
+			 if(arr1[j]%2!=0)
+		        {
+		        	System.out.println("odd number is "+arr1[j]);
+		        }
+		}
+		for (int j = 0; j < arr1.length; j++) 
+		{	
+			 if(arr1[j]>0)
+		        {
+		        	
+		        }
+			
+		}
+		System.out.println("their is no negative value");
+		for (int j = 0; j < arr1.length; j++) 
+			if((0<arr1[j]))
+		 {
+			 System.out.println("negative value is their");
+		 }
+		
+		
+
+	}
+}

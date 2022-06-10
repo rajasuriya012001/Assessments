@@ -1,0 +1,43 @@
+package JDBCconnection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Demoo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection connection=null;
+		Statement stmt=null; 
+		ResultSet rs=null;
+		
+		try {
+			Class.forName("org.postgresql.Driver");
+			connection=DriverManager.getConnection("jdbc:postgresql://localhost:5432/vastpro","postgres","postgres");
+			System.out.println("opened database successfully");
+			stmt=connection.createStatement();
+			rs=stmt.executeQuery("select * from student");
+			
+		
+//	    	while(rs.next()) {
+//			int RollNo =rs.getInt("rollno");
+//			String Name =rs.getString("name");
+//			String Address =rs.getString("address");
+//			System.out.println("rollNumber is"+ RollNo);
+//			System.out.println("name is"+ Name);
+//			System.out.println("address is"+ Address);
+//			System.out.println();
+//		}
+		}
+		catch(Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			System.out.println(e);
+		}
+	
+
+	}
+
+}

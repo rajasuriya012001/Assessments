@@ -1,0 +1,22 @@
+ 
+public class Circle {
+	double radius;
+	double area;
+	static final double PI=3.14;
+	
+	public Circle(double radius) {
+		
+		this.radius = radius;
+	}
+
+	
+	double findArea() {
+		area= PI*radius*radius;
+		return area;
+	}
+	public void print() {
+		// TODO Auto-generated method stub
+		System.out.println("radius "+radius+"\narea "+findArea());
+	}
+
+}

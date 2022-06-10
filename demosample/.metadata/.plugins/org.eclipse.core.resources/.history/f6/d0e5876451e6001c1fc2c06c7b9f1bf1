@@ -1,0 +1,23 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class CoinFilped2 {
+	public static String stand;
+    public static int number;
+    
+   
+    public static void main(String args[]) {
+    	 
+		 Scanner src=new Scanner(System.in);
+	        int stand = src.nextInt(2);
+	        if (stand == 0) 
+	        {
+	            System.out.println("heads");
+	        } 
+	        else 
+	        {
+	            System.out.println("tails");
+	        }
+		
+	}
+}

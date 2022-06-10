@@ -1,0 +1,77 @@
+package com.training.IOStream;
+import java.io.*;
+
+import com.training.first.BankAccount;
+
+public class DemoSerialization {
+	public static void printData(Employee e)
+	{
+		System.out.println("name is = "+ e.name);
+        System.out.println("age is  = "+ e.age);
+        System.out.println("x value is = " + e.x);
+	    System.out.println("count is = " + e.count +"\n");
+}
+	public static void main(String[]args)
+	
+	{
+		Employee a = new Employee("chandru",21,100,20);
+		BankAccount ba = new BankAccount();
+		String filename="Employee.txt";
+		String Filename1="BankAccount.txt";
+		
+		try
+		{
+			FileOutputStream fos = new FileOutputStream(filename);
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			oos.writeObject(a);
+			oos.close();
+			fos.close();
+			System.out.println("befor serialization done");
+			printData(a);
+			
+			FileOutputStream fis1=new FileOutputStream(Filename1);
+			ObjectOutputStream ois1=new ObjectOutputStream(fis1);
+			
+			ois1.writeObject(ba);
+			
+			ois1.close();
+			fis1.close();
+			
+			ba.display();
+		}
+		catch (IOException d) {
+			System.out.println("IO is caught");
+		}
+		
+		try
+		{
+			FileInputStream fis=new FileInputStream(filename);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			
+			Employee b = (Employee)ois.readObject();
+			ois.close();
+			fis.close();
+			System.out.println("done after deseralization");
+			printData(b);
+			FileInputStream fis1=new FileInputStream(Filename1);
+			ObjectInputStream ois1=new ObjectInputStream(fis1);
+			
+			BankAccount w =(BankAccount)ois1.readObject();
+			
+			ois1.close();
+			fis1.close();
+			
+			w.display();
+			
+		}
+		catch(IOException | ClassNotFoundException z)
+		{
+			System.out.println(z);
+		} 
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,33 @@
+package com.training.four;
+import java.util.Scanner;
+
+public class ShapeMain {
+	public static void main(String[]args)
+	{
+		Scanner s = new Scanner(System.in);
+		
+		Triangle a=new Triangle();
+		a.getdetails();
+		System.out.println("enter thr b and h ");
+		//a.get();
+		a.getdetails(s.nextInt(),s.nextInt());
+		a.calculateArea();
+		System.out.println(a.displayDetails());
+		
+		Circle b=new Circle();
+		System.out.println("enter the r value");
+		b.getDetails(s.nextInt());
+		b.calculateArea();
+		System.out.println(b.displayDetails());
+		Shape y=new Circle();
+		System.out.println(y.calculateArea());
+		System.out.println(y.displayDetails());
+		
+		
+		
+		
+		
+				
+	}
+
+}

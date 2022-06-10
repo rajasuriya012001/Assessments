@@ -1,0 +1,26 @@
+package com.training.third;
+import java.io.*;
+public class ComJava {
+public static void main(String[]args)
+{
+	try
+	{
+		FileWriter f= new FileWriter("com.training.Exception/BankMainAcc.java");
+		BufferedReader br=new BufferedReader(f);
+		String s=null;
+	while((s=br.readLine())!=null)
+      {
+	System.out.println(s);
+      }
+		
+		
+			
+		
+	}
+	catch(IOException i)
+	{
+		System.out.println(i.getMessage());
+	}
+}
+}
+

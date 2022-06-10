@@ -1,0 +1,10 @@
+package com.training;
+
+public class TransMain {
+	public static void main(String[]args)
+	{
+		Transsub s= new Transsub();
+		s.transactionDetails();
+	}
+
+}

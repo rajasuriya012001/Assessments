@@ -1,0 +1,24 @@
+package com.training.IOStream;
+
+public class Generic {
+public static < E > void printArray(E[]arr)
+{
+	for(E element :arr)
+	{
+		System.out.printf("%s ",element);
+	}
+}
+public static void main(String[]args)
+{
+	Integer[] intarr1 ={10, 20, 30, 40, 50};
+	Double[] doublearr2= { 1.1, 2.2, 3.3, 4.4, 5.4};
+	Character[] chararr3= {'h','e','l','l','o'};
+	System.out.println("int array  :"+intarr1);
+	//printArray(intarr1);
+	System.out.println("Double array  :"+ doublearr2);
+	//printArray(doublearr2);
+	System.out.println("character array  :"+chararr3);
+	//printArray(chararr3);
+	}
+
+}

@@ -1,0 +1,59 @@
+package com.training.IOStream;
+import java.io.*;
+
+public class DemoSerialization {
+	public static void printData(Employee e)
+	{
+		System.out.println("name is = "+ e.name);
+        System.out.println("age is  = "+ e.age);
+        System.out.println("x value is = " + e.x);
+	    System.out.println("count is = " + e.count);
+}
+	public static void main(String[]args)
+	
+	{
+		Employee a = new Employee("chandru",21,100,20);
+		String filename="Employee.txt";
+		String Filename1="Bank22.txt";
+		/*
+		try
+		{
+			FileOutputStream fos = new FileOutputStream(filename);
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			oos.writeObject(a);
+			oos.close();
+			fos.close();
+			System.out.println("befor serialization done");
+			printData(a);
+		}
+		catch (IOException d) {
+			System.out.println("IO is caught");
+		}
+		*/
+		try
+		{
+			FileInputStream fis=new FileInputStream(filename);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			
+			Employee b = (Employee)ois.readObject();
+			FileInputStream fis1=new FileInputStream(Filename1);
+			ObjectInputStream ois1=new ObjectInputStream(fis1);
+			
+			Bank22 w =(Bank22)ois.readObject();
+			ois.close();
+			fis.close();
+			System.out.println("done after deseralization");
+			printData(b);
+			
+		}
+		catch(IOException | ClassNotFoundException z)
+		{
+			System.out.println(z);
+		} 
+		
+	}
+	
+	
+	
+
+}

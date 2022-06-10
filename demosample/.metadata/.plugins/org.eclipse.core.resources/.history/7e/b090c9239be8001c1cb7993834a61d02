@@ -1,0 +1,6 @@
+package Assesment2;
+
+public interface ShapeBehaviour {
+double getArea();
+void printInfo();
+}

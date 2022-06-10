@@ -1,0 +1,17 @@
+package Assesment3;
+
+public class CarMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car c=new Car(2345, 2022);
+		c.setRegisterNumber(123);
+		c.setModel(2010);
+		
+		Car c1=new Car(7890, 9876);
+		c1.setRegisterNumber(124);
+		c1.setModel(2015);
+		System.out.println(c.getCount());
+	}
+
+}

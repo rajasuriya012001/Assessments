@@ -1,0 +1,30 @@
+package com.training.Exception;
+
+import java.util.Scanner;
+
+public class DemoException {
+	public static void main(String[]args)
+	{
+		Scanner s=new Scanner (System.in);
+		System.out.println("Enter the name");
+		String d=s.next();
+		System.out.println("Enter the age");
+		int f=s.nextInt();
+	
+		try {
+		Recruitment a = new Recruitment(d,f);
+		a.recurit();
+	}
+		catch(InvalidAgeException e)
+		{
+			System.out.println(e.showMessage());
+		}
+		catch(Exception c)
+		{
+			System.out.println(c);
+		}
+		
+	}
+}
+
+

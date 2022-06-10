@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="post">
+Number
+<input type="text" name="number"/><br><br>
+Pin
+<input type="password" name="pin"/>
+<input type="submit" value="Login" formaction="BankValue"/>
+<input type="submit" value="withdraw" formaction="Withdraw"/>
+</body>
+</html>
+

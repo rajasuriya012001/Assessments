@@ -1,0 +1,38 @@
+package com.training.first;
+import java.io.*;
+
+
+public class Compile 
+{
+public static void main(String[]args)
+{
+	try
+	{
+		File folder=new File("demosample");
+		if(!folder.exists());
+		folder.mkdir();
+		FileWriter f= new FileWriter("demosample/sample11.txt");
+		BufferedWriter b=new BufferedWriter(f,5);
+		b.write("this is a sample");
+		b.write("have a great afternoon");
+		b.close();
+		System.out.println("datasaved");
+		FileReader r=new FileReader("demosample/sample11.txt");
+		BufferedReader br=new BufferedReader(r);
+		String str=null;
+		while((str=br.readLine())!=null)
+      {
+	System.out.println(str);
+	br.close();
+      }
+		
+		
+	}
+	catch(IOException i)
+	{
+		System.out.println(i.getMessage());
+	}
+	
+
+}
+}

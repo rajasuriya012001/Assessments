@@ -1,0 +1,16 @@
+package com.training.IOStream;
+
+public class Boxing {
+
+	public static void main(String[]args)
+	{
+		int num1=10;
+		Integer num2,num3=77;
+		num2=num1;
+		System.out.println("AutoBOxing" +num2);
+		//Integer num3=77;
+		num1=num3;
+		System.out.println("UNBOXING " +num1);
+		
+	}
+}

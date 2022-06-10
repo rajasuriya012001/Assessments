@@ -1,0 +1,24 @@
+package com.training.Exception;
+
+public class BankAcc
+{
+	int amount,balance;
+	public BankAcc(int amount,int balance)
+	{
+		this.amount=amount;
+		this.balance=balance;
+	}
+	public void drawing() throws  UserDefinedException
+	{
+		if(amount>balance)
+	      {
+	   throw new  UserDefinedException(balance);
+			
+	     }
+		else
+		{
+			System.out.println("sufficient balance "+amount); 
+		}
+
+}
+}

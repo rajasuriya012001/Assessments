@@ -1,0 +1,25 @@
+package com.training.LamProgram; 
+import java.util.*;
+
+public class MapProgram {
+	public static void main(String[]arsg)
+	{
+		HashMap<Integer, String> mp = new HashMap<Integer, String>();
+		mp.put(12, "ram");
+		mp.put(12, "bala");
+		mp.put(12, "chandru");
+		mp.put(12, "pravin");
+	    mp.put(null, "arun");
+		mp.put(12, "pradeep");
+		mp.put(1, null);
+		mp.put(2, null);
+		mp.put(3, null);
+		System.out.println("HASH MAP ");
+		for(Map.Entry m : mp.entrySet())
+		{
+			System.out.println(m.getKey()+ " " + m.getValue());
+		}
+		
+	}
+
+}

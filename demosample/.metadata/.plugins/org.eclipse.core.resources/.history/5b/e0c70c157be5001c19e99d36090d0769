@@ -1,0 +1,132 @@
+package com.training.thirdweek;
+
+import java.sql.*;
+import java.util.Scanner;
+
+public class demoTask {
+	public static void main(String[] args) {
+		Connection con = null;
+		PreparedStatement ps = null;
+		Scanner sc = new Scanner(System.in);
+		try {
+			con = DBConnection1.getConnection();
+
+		} catch (SQLException e) {
+			System.err.println("there was an error getting the connection");
+		}
+		try {
+			con.setAutoCommit(false);
+			System.err.println("the autocommit was disabled!");
+
+		} catch (SQLException e) {
+			System.err.println("there was an error disabled autocommit");
+		}
+		System.out.println("-------------");
+		
+		
+		  try {
+		 
+		  
+		  System.out.println("enter the id");
+		  int id =sc.nextInt();
+		  System.out.println("enter the user name");
+		  String name = sc.next();
+		  System.out.println("enter the password");
+		  String password= sc.next();
+		  System.out.println("enter the address"); 
+		  String address = sc.next();
+		  System.out.println("enter the mailid"); 
+		  String mailid = sc.next();
+		  
+		  
+		  DBConnection1.insertRow(con,id,name,password,address,mailid);
+		  
+		 // con.commit(); 
+		  System.err.println("the inserted was successfully executed");
+		  } 
+		  
+		  catch(SQLException s)
+		  { 
+			  s.printStackTrace();
+		      System.err.println(s.getClass().getName()+": "+s.getMessage());
+		      System.exit(0); 
+		  } 
+		  catch(Exception e) 
+		  { 
+			  e.printStackTrace();
+		  System.err.println(e.getClass().getName()+": "+e.getMessage());
+		  System.exit(0); 
+		  }
+		  
+		  /*
+		  try 
+		  { 
+			  System.out.println("enter the id"); 
+			  int id =sc.nextInt();
+		  System.out.println("enter the address");
+		  String address = sc.next();
+		 
+		   DBConnection1.updateRow(con,id,address); con.commit();
+		   System.err.println(" update the row successfully"); 
+		   }
+		  catch(SQLException s)
+		  {
+		   s.printStackTrace();
+		   System.err.println(s.getClass().getName()+": "+s.getMessage());
+		   System.exit(0); 
+		   } 
+		  catch(Exception e)
+		  { 
+			  e.printStackTrace();
+		   System.err.println(e.getClass().getName()+": "+e.getMessage());
+		   System.exit(0); 
+		   }
+		   */
+		 
+		/*
+		   try 
+		   { 
+			   System.out.println("enter the id"); 
+			   int id =sc.nextInt();
+		   DBConnection1.deleteRow(con,id); 
+		   System.err.println("delete the row successfully");
+		   
+		   } 
+		   catch(SQLException s) 
+		   {
+			   s.printStackTrace();
+		   System.err.println(s.getClass().getName()+": "+s.getMessage());
+		   System.exit(0);
+		   } 
+		   catch(Exception e)
+		   { 
+			   e.printStackTrace();
+		   System.err.println(e.getClass().getName()+": "+e.getMessage());
+		  System.exit(0);
+		  }
+		  
+		 /*
+		try {
+			System.out.println("enter the id");
+			int id = sc.nextInt();
+			DBConnection1.selectRow(con, id);
+			
+			
+			
+			
+			
+			System.err.println("select the row successfully");
+
+		} catch (SQLException s) {
+			s.printStackTrace();
+			System.err.println(s.getClass().getName() + ": " + s.getMessage());
+			System.exit(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
+			System.exit(0);
+		}
+		*/
+	}
+
+}

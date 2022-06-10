@@ -1,0 +1,21 @@
+package com.training.Exception;
+
+public class Recruitment {
+private String canName;
+private int canAge;
+public Recruitment(String canName,int canAge)
+{
+	this.canName=canName;
+	this.canAge=canAge;
+}
+public void recurit() throws  InvalidAgeException
+{
+	if(canAge <21 || canAge>68)
+	{
+		throw new InvalidAgeException(canAge);
+	}
+	else {
+		System.out.println("valid AGE , WE CAN CONSIDER");
+	}
+}
+}

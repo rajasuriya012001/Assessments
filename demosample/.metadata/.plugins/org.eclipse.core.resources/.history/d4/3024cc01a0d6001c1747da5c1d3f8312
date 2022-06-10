@@ -1,0 +1,27 @@
+package com.training.IOStream;
+import java.util.*;
+
+public class VecList {
+	public static void main( String[]args) 
+	{
+		Vector<Integer> li = new Vector<Integer>();
+		li.add(12);
+		li.add(13);
+		li.add(14);
+		li.add(4,16);
+		li.add(15);
+		li.add(0,11);
+		Iterator<Integer>iter = li.iterator();
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

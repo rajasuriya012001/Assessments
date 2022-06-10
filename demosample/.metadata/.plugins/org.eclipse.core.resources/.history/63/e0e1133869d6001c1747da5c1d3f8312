@@ -1,0 +1,22 @@
+package com.training.IOStream;
+
+public class DemoVarArgs {
+	
+	static void displayData(int id,String name,String... certification)
+	{
+		System.out.println("display methiod invoked");
+		for(String s:certification)
+		{
+			System.out.println(s);
+		}
+	}
+	public static void main(String args[])
+	{
+		String str1[]= {"ram"};
+		String arr[]=new String[3];
+		String arr1[]={"hi","hello","ram"};
+		displayData(1,"praveen");
+		displayData(2,"evelin","java");
+	}
+
+}

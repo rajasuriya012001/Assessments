@@ -1,0 +1,24 @@
+package com.training.third;
+
+public class Person {
+	String name;
+	int phn;
+	public Person()
+	{
+		name="charan";
+		
+		phn=1234567891;
+	}
+	public Person(int phn,String name)
+	{
+		this.phn=phn;
+		this.name=name;
+	
+	}
+	public String display()
+	{
+		return "PHONE NO :" + phn +"\n"+  " NAME :" + name  ;
+	}
+	
+
+}

@@ -1,0 +1,29 @@
+package com.training.third;
+
+public class Person1 extends Person
+{
+int roll,marks;
+String course,stdadd;
+public Person1()
+{
+	roll=123;
+	marks=1234;
+	course="java";
+	stdadd="gokul nagar,sozhanganallur";
+	
+}
+public Person1(int roll,int marks,String course,String stdadd,int phn,String name)
+{
+	super(phn,name);
+	this.roll=roll;
+	this.marks=marks;
+	this.course=course;
+	this.stdadd=stdadd;
+}
+public String display()
+{
+	System.out.println(super.display());
+	return "ROLL NUMBER IS  :" + roll +"\n"+  "MARKS :"  + marks +"\n" +  "COURSE :"  + course+"\n" +  "STUDENT ADDRESS :" + stdadd;
+}
+
+}

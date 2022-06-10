@@ -1,0 +1,14 @@
+package com.training.Exception;
+
+public class UserDefinedException extends Exception{
+	private int bal;
+	public UserDefinedException(int bal)
+	{
+		this.bal=bal;
+	}
+	public String display()
+	{
+		return"INSUFFICIENT BALANCE "+"\t"+"balance is "+ bal;
+	}
+
+}

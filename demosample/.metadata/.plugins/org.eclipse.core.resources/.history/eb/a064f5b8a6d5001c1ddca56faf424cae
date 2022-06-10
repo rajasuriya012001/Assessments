@@ -1,0 +1,29 @@
+package com.training.first;
+import java.io.*;
+
+public class ImgFile {
+	public static void main(String[]args)
+	{
+		try
+		{
+			FileInputStream f=new FileInputStream("/home/vastpro/demosample/Samone/src/com/training/Accept.java");
+			FileOutputStream o = new FileOutputStream("/home/vastpro/demosample/Samone/src/com/training/Exception/Accept1.java");
+			int i;
+			while((i=f.read())!=-1)
+			{
+				o.write(i);
+			}
+			f.close();
+			o.close();
+		}
+		catch(FileNotFoundException a)
+		{
+			a.printStackTrace();
+		}
+		catch(IOException b)
+		{
+			b.printStackTrace();
+		}
+	}
+
+}

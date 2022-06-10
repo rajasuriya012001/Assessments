@@ -1,0 +1,10 @@
+package com.training.third;
+
+public class PerMaining {
+	public static void main(String[]args)
+	{
+	Person obj=new Person1();
+	System.out.println(obj.display());
+
+}
+}

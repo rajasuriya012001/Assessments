@@ -1,0 +1,5 @@
+127.0.0.1 - - [03/Jun/2022:15:09:35 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [03/Jun/2022:15:09:41 +0530] "GET /RegistrationWebProject/user10Sample.html HTTP/1.1" 200 763
+127.0.0.1 - - [03/Jun/2022:15:10:09 +0530] "POST /RegistrationWebProject/SaveServlet HTTP/1.1" 404 789
+127.0.0.1 - - [03/Jun/2022:15:10:17 +0530] "GET /RegistrationWebProject/ViewServlet HTTP/1.1" 404 789
+127.0.0.1 - - [03/Jun/2022:15:10:27 +0530] "POST /RegistrationWebProject/SaveServlet HTTP/1.1" 404 789

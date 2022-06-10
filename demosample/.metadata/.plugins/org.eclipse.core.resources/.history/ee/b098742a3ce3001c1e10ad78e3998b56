@@ -1,0 +1,76 @@
+package com.training.Registration;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class AuthServlet
+ */
+@WebServlet("/AuthServlet")
+public class AuthServlet extends HttpServlet {
+	
+	HashMap<String,String> map = new HashMap<String,String>();
+	public void init(ServletConfig config) throws ServletException {
+		
+		// TODO Auto-generated method stub
+		super.init(config);
+//		map.put("raji", "raji");
+//		map.put("apsara", "Apsara");
+//		map.put("pavi", "Pavi");
+		map.put("vastpro", "vastpro");
+	}
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+//	public AuthServlet() {
+//		super();
+//		// TODO Auto-generated constructor stub
+//	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		PrintWriter out = response.getWriter();
+		String strUsername = request.getParameter("txtName");
+		String strPassword = request.getParameter("txtPassword");
+
+		for (Map.Entry m : map.entrySet()) {
+			if ((m.getKey().equals(strUsername)) && (m.getValue().equals(strPassword)))
+			{
+				out.println("username: " + strUsername + "password " + strPassword);
+			} 
+			else {
+				RequestDispatcher re=request.getRequestDispatcher("/Auth.html");
+		    	re.include(request, response);
+				out.println("invalid username and password");
+			}
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+        //doGet(request, response);
+
+
+	}
+
+}

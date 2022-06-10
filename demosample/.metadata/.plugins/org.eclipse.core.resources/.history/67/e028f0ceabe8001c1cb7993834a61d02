@@ -1,0 +1,8 @@
+
+public class classs {
+	private String name;
+	public String myName() {
+		return "sxr";
+	}
+
+}

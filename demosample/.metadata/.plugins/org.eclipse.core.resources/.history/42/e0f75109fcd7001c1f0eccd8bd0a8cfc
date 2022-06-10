@@ -1,0 +1,36 @@
+package FridayTest;
+
+import java.util.Scanner;
+
+
+
+public class Calculator {
+	{
+		Scanner s=new Scanner (System.in);
+		System.out.println("Enter the num1");
+		int d=s.nextInt();
+		System.out.println("Enter the num2");
+		int f=s.nextInt();
+	
+		try {
+		Calculator a = new Calculator();
+		a.display();
+	}
+		catch(NegativeNumberException e) 
+		{
+			System.out.println(e.display());
+		}
+		catch(Exception c)
+		{
+			System.out.println(c);
+		}
+		
+		
+	}
+
+	private void display() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+}

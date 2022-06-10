@@ -1,0 +1,28 @@
+package com.training.IOStream;
+import java .util.*;
+
+import com.training.second.Student;
+
+public class SetProgram {
+	public static void main(String[]args)
+	{
+		
+	
+	HashSet<Set> h1 = new HashSet<Set>();
+	
+	/*h1.add("arun");
+	h1.add("bala");
+	h1.add("arun");
+	h1.add("ram");
+	h1.add("arun");
+	h1.add("arun");
+	*/
+	System.out.println(h1.size());
+	for(Set s:h1)
+	{
+		System.out.println(s);
+	
+	}
+	
+}
+}

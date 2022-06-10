@@ -1,0 +1,31 @@
+package com.training.IOStream;
+import java .util.*;
+
+import com.training.second.Inherit;
+
+
+
+public class SetProgram {
+	public static void main(String[]args)
+	{
+		
+	
+	HashSet<Inherit> h1 = new HashSet<Inherit>();
+	
+	h1.add("arun");
+	h1.add("bala");
+	h1.add("arun");
+	h1.add("ram");
+	h1.add("arun");
+	h1.add("arun");
+	
+	//System.out.println(h1.display());
+	System.out.println(h1.size());
+	for(Inherit s:h1)
+	{
+		System.out.println(s);
+	
+	}
+	
+}
+}

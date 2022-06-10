@@ -1,0 +1,20 @@
+package com.training.Exception;
+
+public class DemoException {
+	public static void main(String[]args)
+	{
+		try {
+		Recruitment a = new Recruitment();
+		a.recurit();
+	}
+		catch(InvalidAgeException e)
+		{
+			System.out.println(e.showMessage());
+		}
+		catch(Exception a)
+		{
+			System.out.println(a);
+		}
+	}
+
+}

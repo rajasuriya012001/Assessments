@@ -1,0 +1,11 @@
+package com.training.IOStream;
+import java.util.*;
+
+public class VecList {
+	public static void main( String[]args) 
+	{
+		Vector<Integer> li = new 
+		
+	}
+
+}

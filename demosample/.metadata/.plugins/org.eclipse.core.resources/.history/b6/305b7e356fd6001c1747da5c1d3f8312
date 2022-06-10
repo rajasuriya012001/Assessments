@@ -1,0 +1,35 @@
+package com.training.IOStream;
+
+public class DemoVarArgs {
+	
+	static void displayData(int id,String name,String...certification)
+	{
+		System.out.println("display methiod invoked");
+		System.out.println(id + " "+ name +"");
+		for(String s:certification)
+		{
+			System.out.println(" " +s);
+		}
+	}
+	static void data(int roll,String add,String pin,String...phn)
+	{
+		System.out.println("one more method");
+		System.out.println(roll +"\n" + add + "\n" + pin + "\n");
+		for(String a:phn)
+		{
+			System.out.println(a);
+		}
+	}
+	public static void main(String args[])
+	{
+		String str1[]= {"ram"};
+		String arr[]=new String[5];
+		String arr1[]={"hi","hello","ram"};
+		displayData(1,"praveen");
+		displayData(2,"evelin","java");
+		displayData(3,"chandru","microsoft azure certification");
+		data(123,"gandhi nagar"," chennai-600119");
+		data(345,"baby nagar","ch-600117","0987654321");
+	}
+
+}

@@ -1,0 +1,39 @@
+package FridayTest;
+
+
+
+import FridayTest.NegativeNumberException;
+
+
+
+public class Calculator {
+	
+	public static void main(String []args) {
+	
+		private int num1;
+		private int num2;
+		public Calculator(int num1,int num2)
+		{
+			this.num1 = num1;
+			this.num2 = num2;
+			
+		}
+		public void add() throws  NegativeNumberException
+		{
+			if(num1 < 0 )
+			{
+				throw new NegativeNumberException(num1);
+			}
+			else {
+				System.out.println("valid number , take it");
+			}
+		}
+		public void Calculator() {
+			// TODO Auto-generated method stub
+			
+		}
+		}
+
+	
+}
+}

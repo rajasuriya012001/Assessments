@@ -1,0 +1,33 @@
+package com.training.first;
+import com.training.second.*;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		System.out.println("hello ");
+		/*Employee emp1=new Employee();
+		System.out.println(emp1.display());
+		Employee emp2=new Employee("123","chandru");
+		System.out.println(emp2.display());
+		Employee.Display();*/
+		
+		
+		/*Inherit r=new Inherit();
+		Inherit a=new Inherit(12000,3000,"12a2","chandru");
+		System.out.println(a.display());
+		Set s=new Set();
+		Set c =new Set(1000,"133a3","munees","2 hrs");
+		System.out.println(c.display());*/
+		Calculator w=new Calculator();
+		System.out.println(w.add(5,2));
+		Calculator e=new Calculator();
+		System.out.println(e.add(5,2,4));
+		Calculator r=new Calculator();
+		System.out.println(r.add(5,2,4,7));
+		
+		
+		
+		
+	}
+
+}

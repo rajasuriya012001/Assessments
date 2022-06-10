@@ -1,0 +1,29 @@
+package com.training.first;
+import java.io.*;
+
+
+public class Compile 
+{
+public static void main(String[]args)
+{
+	try
+	{
+		File folder=new File("demo");
+		if(!folder.exists());
+		folder.mkdir();
+		FileWriter f= new FileWriter("demo/sample11.txt");
+		BufferedWriter b=new BufferedWriter(f,2000);
+		b.write("this is a sample");
+		b.write("have a great afternoon");
+		b.close();
+		System.out.println("datasaved");
+		
+	}
+	catch(IOException i)
+	{
+		System.out.println(i.getMessage());
+	}
+	
+
+}
+}

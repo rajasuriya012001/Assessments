@@ -1,0 +1,21 @@
+package com.training.four;
+
+public abstract class Shape {
+	double area;
+	double pi=3.14;
+	public void get()
+	{
+		System.out.println("display details");
+	}
+	public abstract double calculateArea();
+	/*{
+		System.out.println(area);
+	}*/
+	public String displayDetails()
+	{
+		return "Area of " + area;
+	}
+	
+	
+
+}

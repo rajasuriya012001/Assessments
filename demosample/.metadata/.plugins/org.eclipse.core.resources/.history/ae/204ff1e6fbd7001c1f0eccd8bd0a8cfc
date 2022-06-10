@@ -1,0 +1,5 @@
+package FridayTest;
+
+public class NegativeNumberException extends Exception {
+
+}

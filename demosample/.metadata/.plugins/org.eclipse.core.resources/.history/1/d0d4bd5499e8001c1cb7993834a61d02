@@ -1,0 +1,5 @@
+
+public class ShapeBehaviour {
+	double getArea();
+	void printInfo();
+}

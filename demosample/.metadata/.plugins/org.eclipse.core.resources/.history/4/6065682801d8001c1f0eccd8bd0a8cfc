@@ -1,0 +1,27 @@
+package FridayTest;
+
+public class NegativeNumberException extends Exception {
+
+	
+		private int num1;
+		private int num2;
+		public NegativeNumberException(int num1,int num2)
+		{
+			this.num1 = num1;
+			this.num2 = num2;
+		}
+		public String showMessage()
+		{
+			return "Negative number " + num1 ;
+		}
+		
+
+
+	
+	
+	
+
+}
+
+	
+

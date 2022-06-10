@@ -1,0 +1,17 @@
+package com.training.IOStream;
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+	String name;
+	int age;
+	transient int x;
+	private int count;
+	public Employee(String name,int age,int x, int c)
+
+	{
+		this.name=name;
+		this.age=age;
+		this.x=x;
+		this.count=c;
+	}
+}

@@ -1,0 +1,45 @@
+package com.training.IOStream;
+
+import java.util.Scanner;
+
+public class Nummee {
+	enum Day{SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY};
+		int i;
+		Nume(int i)
+		{
+			this.i=i;
+		}
+
+	
+	}
+	public static void main(String[]args)
+	{
+		for (Day d:Day.values())
+		{
+			System.out.println(d);
+		}
+		
+		System.out.println("value of "+Day.valueOf("SUNDAY"));
+		System.out.println("value of "+Day.valueOf("WEDNESDAY").ordinal());
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter the value of days from 0 to 6");
+		int a=s.nextInt();
+		Nummee c= new Nummee();
+		System.out.println("value of "+Day.valueOf(a).ordinal());
+		switch(a)
+		{
+		case 0:
+		
+		System.out.println("its sunday");
+		break;
+		case 1:
+			
+			System.out.println("its monday");
+			break;
+		}
+		
+					
+
+		
+			}
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class CircleMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter radius");
+		Scanner src=new Scanner(System.in);
+		double radius=src.nextDouble();
+		
+		Circle c1=new Circle(radius);
+		
+		c1.findArea();
+		c1.print();
+		
+
+
+	}
+	
+
+}

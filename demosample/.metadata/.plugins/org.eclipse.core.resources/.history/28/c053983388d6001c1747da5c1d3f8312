@@ -1,0 +1,27 @@
+package com.training.IOStream;
+
+public enum Nume 
+{
+	SUNDAY(0),MONDAY(1),TUESDAY(2),WEDNESDAY(3),THURSDAY(4),FRIDAY(5),SATURDAY(6);
+	int i;
+	Nume(int i)
+	{
+		this.i=i;
+	}
+	
+}
+
+/*public static void main(String[]args)
+{
+	//enum Day{SUNDAY,MONDAY,TUEDAY,WEDNESDAY,THUYRSDAY,FRIDAY,SATURDAY};
+	for(Day a:Day.values())
+		
+	{
+		System.out.println(a);
+	}
+	System.out.println("value of sunday is "+ Day.valueOf("SUNDAY"));
+	System.out.println("value of sunday is "+ Day.valueOf("SUNDAY"));
+	
+}
+}
+	*/

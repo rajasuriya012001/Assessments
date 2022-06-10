@@ -1,0 +1,35 @@
+package com.training.LamProgram;
+
+import com.training.third.Student1;
+
+interface GreetingBye
+{
+	void saybye();
+}
+interface greetinghi
+{
+	void greet(String s,int a);
+}
+public class Lprogram {
+	public static void main(String[]args)
+	{
+		GreetingBye s=()->
+		{
+			System.out.println("bye");
+			Student1 st1 = new Student1();
+			System.out.println(st1.display());
+			
+		};
+		s.saybye();
+		greetinghi  g =(n,q)->
+		{
+			System.out.println("name : "+n);
+			System.out.println("age : "+q);
+			
+			
+		};
+		g.greet("chandru",12);
+		
+	}
+
+}

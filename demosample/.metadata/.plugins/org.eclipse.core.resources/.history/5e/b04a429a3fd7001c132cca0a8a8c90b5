@@ -1,0 +1,42 @@
+package com.training.first;
+
+//import java.io.Serializable;
+
+public class BankAccount //implements Serializable 
+{
+	static double accnum;
+	String name,address,type;
+	 /*transient */double bal;
+	public BankAccount()
+	{
+		accnum=1234567;
+		name="chandru";
+		address="gandi nagar,chennai";
+		type="savings";
+		bal=10000.25;
+	}
+	public double withdraw (double amount)
+	{
+		System.out.println("enter the withdrawamount "+ amount);
+		bal-= amount;
+		return bal;
+		
+	}
+	public double dept(double amount)
+	{
+		System.out.println("enter the depositamount "+ amount);
+		bal+= amount;
+		return bal;
+		
+	}
+	public boolean display()
+	{
+		System.out.println("AccountNumber: "+accnum);
+		System.out.println("HolderName: "+name);
+		System.out.println("Address: "+address);
+		System.out.println("AccountType: "+ type);
+		System.out.println("Balance :"+bal + "\n");
+		return true;
+	}
+
+}

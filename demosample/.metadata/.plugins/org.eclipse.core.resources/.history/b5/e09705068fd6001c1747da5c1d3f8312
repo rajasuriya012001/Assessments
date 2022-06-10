@@ -1,0 +1,27 @@
+package com.training.IOStream;
+
+import java.util.ArrayList;
+
+public class ArrList {
+	public static void main(String[]args)
+	{
+		ArrayList a=new ArrayList();
+		a.add(1234);
+		a.add("hi");
+		a.add("hello");
+		for(Object c:a)
+		{
+			System.out.println(c);
+		}
+		ArrayList<String> b=new ArrayList<String>();
+		a.add(1234);
+		a.add("hi");
+		a.add("hello");
+		for(Object c:a)
+		{
+			System.out.println(c);
+		}
+		
+	}
+
+}

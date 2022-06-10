@@ -1,0 +1,90 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class CoinFilped2 {
+//	public static String stand;
+//    public static int number;
+//    
+//    private static void coin() {
+//		// TODO Auto-generated method stub
+//    	
+//    
+//    	 
+//		 Random rand = new Random();
+//	        int stand = rand.nextInt(2);
+//	        if (stand == 0) 
+//	        {
+//	            System.out.println("heads");
+//	        } 
+//	        else 
+//	        {
+//	            System.out.println("tails");
+//	        }
+//		
+//	}
+//    
+//    private static Object getsideup() {
+//		// TODO Auto-generated method stub
+//		System.out.println(stand);
+//        return stand;
+//	}
+//	public static void main(String args[])
+//	{
+//
+//        int headcount = 0;
+//        int tailcount = 0;
+//        Scanner src = new Scanner(System.in);
+//        System.out.println("How many coin flips do you want?");
+//    	 
+//     	
+//        int number = src.nextInt();
+//        for (int i = 1; i <= number; i++) 
+//        {
+//            coin();
+//            if (getsideup().equals("heads")) 
+//            {
+//                headcount++;
+//            } 
+//            else 
+//            {
+//                tailcount++;
+//            }
+//        }
+//        System.out.println("total heads = " + headcount + " total tails = " + tailcount);
+//    }
+//
+//		
+public static void main(String args[]) {
+	 Scanner scnr = new Scanner(System.in);
+	    System.out.print("How many times do you want to flip the coin? ");
+	    int timesFlipped = scnr.nextInt();
+	    Random randomNum = new Random();
+
+
+	    for (int i=0; i < timesFlipped; i++) {
+	        int currentflip = randomNum.nextInt(2);
+	        int previousFlip = 0;
+	        int tailsCount = 0;
+	        int headsCount = 0;
+
+	        if (currentflip == 0) {
+	            System.out.print("H");
+	            previousFlip = 0;
+	            headsCount++;
+	        }
+	        else if (currentflip == 1) {
+	            System.out.print("T");
+	            previousFlip = 1;
+	            tailsCount++;
+	        }
+
+	        if (previousFlip == 0 && currentflip == 1) {
+	            System.out.print(headsCount + " ");
+	            headsCount = 0;
+	        }
+	        else if (previousFlip == 1 && currentflip == 0) {
+	            System.out.print(tailsCount + " ");
+	            tailsCount = 0;
+	        }
+}
+}}

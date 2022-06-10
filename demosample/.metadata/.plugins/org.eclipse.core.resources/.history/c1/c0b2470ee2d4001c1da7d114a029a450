@@ -1,0 +1,29 @@
+package com.training.Exception;
+
+import java.util.Scanner;
+
+public class BankMainAcc {
+	public static void main(String[]args)
+	{
+		try {
+			Scanner s=new Scanner(System.in);
+			System.out.println("enter the amount");
+			int a=s.nextInt();
+			System.out.println("enter the balance");
+			int b=s.nextInt();
+			BankAcc c = new BankAcc(a,b);
+			c.drawing();
+		}
+			catch(UserDefinedException z)
+			{
+				System.out.println(z.display());
+			}
+		catch(Exception y)
+		{
+			System.out.println(y);
+		}
+			
+		}
+	}
+
+

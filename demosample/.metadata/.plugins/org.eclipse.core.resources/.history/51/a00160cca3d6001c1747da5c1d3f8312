@@ -1,0 +1,17 @@
+package com.training.IOStream;
+import java.util.*;
+
+public class Stac {
+	public static void main(String[]args)
+	{
+		Stack m= new Stack();
+		m.push("hey");
+		m.push(123);
+		m.push(567);
+		m.push(100);
+		System.out.println(m.pop());
+		
+	}
+	
+
+}

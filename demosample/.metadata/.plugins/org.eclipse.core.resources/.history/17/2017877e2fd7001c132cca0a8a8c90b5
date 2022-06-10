@@ -1,0 +1,17 @@
+package com.training.IOStream;
+import java.util.*;
+
+public class QuProgram {
+	public static void main(String[]args)
+	{
+		PriorityQueue<Integer> qu = new PriorityQueue<Integer>();
+		qu.add(123);
+		qu.add(345);
+		qu.add(876);
+		qu.add(564);
+		System.out.println("element in the head " +  qu.peek());
+		qu.remove();
+		System.out.println(qu);
+	}
+
+}
